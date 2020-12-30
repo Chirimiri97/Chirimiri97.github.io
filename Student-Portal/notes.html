@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Portal - Notes</title>
+    <link rel="shortcut icon" href="images/edit.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/notes.css" />
+  </head>
+  <body>
+    <div class="container paper">
+      <a href="index.html"
+        ><button id="go-back" class="btn">
+          <i class="fas fa-home" style="color: orange"></i>&nbspGo Back
+        </button></a
+      >
+      <h1 class="text-center">Notes</h1>
+      <!-- <div class="container container-xs paper"> -->
+      <div class="row">
+        <div class="sm-12 md-9 col">
+          <!-- Table Of Keeping Notes. -->
+          <table id="notes" border="1">
+            <thead>
+              <tr>
+                <th>Topic</th>
+                <th>Description</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+        <div class="sm-12 md-3 col">
+          <!-- Form To Submit Notes. -->
+          <form action="" id="notes-form" autocomplete="off">
+            <div class="form-group">
+              <label for="topic">Topic :-</label>
+              <input type="text" id="topic" class="input-block" />
+            </div>
+            <div class="form-group">
+              <label for="description">Description :-</label>
+              <textarea
+                id="description"
+                placeholder=""
+                class="input-block"
+              ></textarea>
+            </div>
+            <button type="submit">Add Note</button>
+          </form>
+          <button id="clear" title="Clear Notes">
+            <i class="fas fa-recycle fa-2x" style="color: red"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </div>
+
+    <script src="Js/notes.js"></script>
+  </body>
+</html>
