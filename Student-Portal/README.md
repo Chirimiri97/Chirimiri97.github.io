@@ -7,8 +7,9 @@
 3. Clock
 4. Notes
 #
+#### Try it yourself - https://chirimiri97.github.io/Student-Portal/
 1. **Calculator.**
-![calculator](/images/readme/calculator.png)
+![calculator](images/readme/calculator.png)
 
 2. **ToDo List.**
 ![todo](images/readme/todo.png)
